@@ -11,7 +11,7 @@ How to Generate the Book
 
    kindlegen -verbose -o learn-you-a-haskell.mobi book.opf
 
-3. Load learn-you-a-haskell.mobi on you Kindle device or test it in the Kindle
+3. Load learn-you-a-haskell.mobi on your Kindle device or test it in the Kindle
 Previewer tool[2].
 
 
