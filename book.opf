@@ -9,6 +9,8 @@
   </metadata>
 
   <manifest>
+    <item id="preamble" media-type="application/xhtml+xml" href="pages/preamble.html"/>
+    <item id="license" media-type="application/xhtml+xml" href="pages/license.html"/>
     <item id="toc" media-type="application/xhtml+xml" href="pages/toc.html"/>
     <item id="introduction" media-type="application/xhtml+xml" href="pages/introduction.html"/>
     <item id="starting-out" media-type="application/xhtml+xml" href="pages/starting-out.html"/>
@@ -30,6 +32,8 @@
   </manifest>
 
   <spine toc="ncx-toc">
+    <itemref idref="preamble"/>
+    <itemref idref="license"/>
     <itemref idref="toc"/>
     <itemref idref="introduction"/>
     <itemref idref="starting-out"/>
