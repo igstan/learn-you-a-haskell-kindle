@@ -13,105 +13,105 @@
   <docAuthor><text>Amazon.com</text></docAuthor>
 
   <navMap>
-    <navPoint class="toc" id="toc" playOrder="1">
+    <navPoint class="toc" id="toc">
       <navLabel>
         <text>Table of Contents</text>
       </navLabel>
       <content src="pages/toc.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="introduction" playOrder="2">
+    <navPoint class="chapter" id="introduction">
       <navLabel>
         <text>Introduction</text>
       </navLabel>
       <content src="pages/introduction.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="starting-out" playOrder="3">
+    <navPoint class="chapter" id="starting-out">
       <navLabel>
         <text>Starting Out</text>
       </navLabel>
       <content src="pages/starting-out.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="types-and-typeclasses" playOrder="4">
+    <navPoint class="chapter" id="types-and-typeclasses">
       <navLabel>
         <text>Type and Typeclasses</text>
       </navLabel>
       <content src="pages/types-and-typeclasses.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="syntax-in-functions" playOrder="5">
+    <navPoint class="chapter" id="syntax-in-functions">
       <navLabel>
         <text>Syntax in Functions</text>
       </navLabel>
       <content src="pages/syntax-in-functions.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="recursion" playOrder="6">
+    <navPoint class="chapter" id="recursion">
       <navLabel>
         <text>Recursion</text>
       </navLabel>
       <content src="pages/recursion.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="higher-order-functions" playOrder="7">
+    <navPoint class="chapter" id="higher-order-functions">
       <navLabel>
         <text>Higher Order Functions</text>
       </navLabel>
       <content src="pages/higher-order-functions.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="modules" playOrder="8">
+    <navPoint class="chapter" id="modules">
       <navLabel>
         <text>Modules</text>
       </navLabel>
       <content src="pages/modules.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="making-our-own-types-and-typeclasses" playOrder="9">
+    <navPoint class="chapter" id="making-our-own-types-and-typeclasses">
       <navLabel>
         <text>Making Our Own Types and Typeclasses</text>
       </navLabel>
       <content src="pages/making-our-own-types-and-typeclasses.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="input-and-output" playOrder="10">
+    <navPoint class="chapter" id="input-and-output">
       <navLabel>
         <text>Input and Output</text>
       </navLabel>
       <content src="pages/input-and-output.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="functionally-solving-problems" playOrder="11">
+    <navPoint class="chapter" id="functionally-solving-problems">
       <navLabel>
         <text>Functionally Solving Problems</text>
       </navLabel>
       <content src="pages/functionally-solving-problems.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="functors-applicative-functors-and-monoids" playOrder="12">
+    <navPoint class="chapter" id="functors-applicative-functors-and-monoids">
       <navLabel>
         <text>Functors Applicative Functors and Monoids</text>
       </navLabel>
       <content src="pages/functors-applicative-functors-and-monoids.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="a-fistful-of-monads" playOrder="13">
+    <navPoint class="chapter" id="a-fistful-of-monads">
       <navLabel>
         <text>A Fistful of Monads</text>
       </navLabel>
       <content src="pages/a-fistful-of-monads.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="for-a-few-monads-more" playOrder="14">
+    <navPoint class="chapter" id="for-a-few-monads-more">
       <navLabel>
         <text>For a Few Monads More</text>
       </navLabel>
       <content src="pages/for-a-few-monads-more.html"/>
     </navPoint>
 
-    <navPoint class="chapter" id="zippers" playOrder="15">
+    <navPoint class="chapter" id="zippers">
       <navLabel>
         <text>Zippers</text>
       </navLabel>
