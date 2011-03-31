@@ -1,0 +1,24 @@
+#cover {
+  margin-top:20%;
+}
+
+p {
+  text-indent: 0px;
+}
+
+h2 {
+  margin: 1em 0;
+}
+
+.image {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+pre {
+  margin: 1em 0;
+}
+
+.fixed {
+  font-family: monospace;
+}

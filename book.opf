@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:title>Learn You a Haskell for Great Good!</dc:title>
+    <dc:language>en-us</dc:language>
+    <dc:creator>Miran Lipovica</dc:creator>
+    <meta name="cover" content="cover"/>
+  </metadata>
+
+  <manifest>
+    <item id="toc" media-type="application/xhtml+xml" href="pages/toc.html"/>
+    <item id="introduction" media-type="application/xhtml+xml" href="pages/introduction.html"/>
+    <item id="starting-out" media-type="application/xhtml+xml" href="pages/starting-out.html"/>
+    <item id="types-and-typeclasses" media-type="application/xhtml+xml" href="pages/types-and-typeclasses.html"/>
+    <item id="syntax-in-functions" media-type="application/xhtml+xml" href="pages/syntax-in-functions.html"/>
+    <item id="recursion" media-type="application/xhtml+xml" href="pages/recursion.html"/>
+    <item id="higher-order-functions" media-type="application/xhtml+xml" href="pages/higher-order-functions.html"/>
+    <item id="modules" media-type="application/xhtml+xml" href="pages/modules.html"/>
+    <item id="making-our-own-types-and-typeclasses" media-type="application/xhtml+xml" href="pages/making-our-own-types-and-typeclasses.html"/>
+    <item id="input-and-output" media-type="application/xhtml+xml" href="pages/input-and-output.html"/>
+    <item id="functionally-solving-problems" media-type="application/xhtml+xml" href="pages/functionally-solving-problems.html"/>
+    <item id="functors-applicative-functors-and-monoids" media-type="application/xhtml+xml" href="pages/functors-applicative-functors-and-monoids.html"/>
+    <item id="a-fistful-of-monads" media-type="application/xhtml+xml" href="pages/a-fistful-of-monads.html"/>
+    <item id="for-a-few-monads-more" media-type="application/xhtml+xml" href="pages/for-a-few-monads-more.html"/>
+    <item id="zippers" media-type="application/xhtml+xml" href="pages/zippers.html"/>
+
+    <item id="ncx-toc" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
+    <item id="cover" media-type="image/png" href="images/cover.png"/>
+  </manifest>
+
+  <spine toc="ncx-toc">
+    <itemref idref="toc"/>
+    <itemref idref="introduction"/>
+    <itemref idref="starting-out"/>
+    <itemref idref="types-and-typeclasses"/>
+    <itemref idref="syntax-in-functions"/>
+    <itemref idref="recursion"/>
+    <itemref idref="higher-order-functions"/>
+    <itemref idref="modules"/>
+    <itemref idref="making-our-own-types-and-typeclasses"/>
+    <itemref idref="input-and-output"/>
+    <itemref idref="functionally-solving-problems"/>
+    <itemref idref="functors-applicative-functors-and-monoids"/>
+    <itemref idref="a-fistful-of-monads"/>
+    <itemref idref="for-a-few-monads-more"/>
+    <itemref idref="zippers"/>
+  </spine>
+
+  <guide>
+    <reference type="toc" title="Table of Contents" href="pages/toc.html"></reference>
+    <reference type="text" title="Introduction" href="pages/introduction.html"></reference>
+  </guide>
+</package>

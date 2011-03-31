@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="en-US">
+  <head>
+    <meta name="dtb:uid" content="BookId"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+
+  <docTitle><text>Learn You a Haskell for Great Good!</text></docTitle>
+  <docAuthor><text>Amazon.com</text></docAuthor>
+
+  <navMap>
+    <navPoint class="toc" id="toc" playOrder="1">
+      <navLabel>
+        <text>Table of Contents</text>
+      </navLabel>
+      <content src="pages/toc.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="introduction" playOrder="2">
+      <navLabel>
+        <text>Introduction</text>
+      </navLabel>
+      <content src="pages/introduction.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="starting-out" playOrder="3">
+      <navLabel>
+        <text>Starting Out</text>
+      </navLabel>
+      <content src="pages/starting-out.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="types-and-typeclasses" playOrder="4">
+      <navLabel>
+        <text>Type and Typeclasses</text>
+      </navLabel>
+      <content src="pages/types-and-typeclasses.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="syntax-in-functions" playOrder="5">
+      <navLabel>
+        <text>Syntax in Functions</text>
+      </navLabel>
+      <content src="pages/syntax-in-functions.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="recursion" playOrder="6">
+      <navLabel>
+        <text>Recursion</text>
+      </navLabel>
+      <content src="pages/recursion.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="higher-order-functions" playOrder="7">
+      <navLabel>
+        <text>Higher Order Functions</text>
+      </navLabel>
+      <content src="pages/higher-order-functions.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="modules" playOrder="8">
+      <navLabel>
+        <text>Modules</text>
+      </navLabel>
+      <content src="pages/modules.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="making-our-own-types-and-typeclasses" playOrder="9">
+      <navLabel>
+        <text>Making Our Own Types and Typeclasses</text>
+      </navLabel>
+      <content src="pages/making-our-own-types-and-typeclasses.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="input-and-output" playOrder="10">
+      <navLabel>
+        <text>Input and Output</text>
+      </navLabel>
+      <content src="pages/input-and-output.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="functionally-solving-problems" playOrder="11">
+      <navLabel>
+        <text>Functionally Solving Problems</text>
+      </navLabel>
+      <content src="pages/functionally-solving-problems.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="functors-applicative-functors-and-monoids" playOrder="12">
+      <navLabel>
+        <text>Functors Applicative Functors and Monoids</text>
+      </navLabel>
+      <content src="pages/functors-applicative-functors-and-monoids.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="a-fistful-of-monads" playOrder="13">
+      <navLabel>
+        <text>A Fistful of Monads</text>
+      </navLabel>
+      <content src="pages/a-fistful-of-monads.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="for-a-few-monads-more" playOrder="14">
+      <navLabel>
+        <text>For a Few Monads More</text>
+      </navLabel>
+      <content src="pages/for-a-few-monads-more.html"/>
+    </navPoint>
+
+    <navPoint class="chapter" id="zippers" playOrder="15">
+      <navLabel>
+        <text>Zippers</text>
+      </navLabel>
+      <content src="pages/zippers.html"/>
+    </navPoint>
+  </navMap>
+</ncx>
