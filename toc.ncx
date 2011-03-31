@@ -10,7 +10,7 @@
   </head>
 
   <docTitle><text>Learn You a Haskell for Great Good!</text></docTitle>
-  <docAuthor><text>Amazon.com</text></docAuthor>
+  <docAuthor><text>Miran Lipovača</text></docAuthor>
 
   <navMap>
     <navPoint class="toc" id="toc">
