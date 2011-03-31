@@ -26,6 +26,7 @@
     <item id="a-fistful-of-monads" media-type="application/xhtml+xml" href="pages/a-fistful-of-monads.html"/>
     <item id="for-a-few-monads-more" media-type="application/xhtml+xml" href="pages/for-a-few-monads-more.html"/>
     <item id="zippers" media-type="application/xhtml+xml" href="pages/zippers.html"/>
+    <item id="end" media-type="application/xhtml+xml" href="pages/end.html"/>
 
     <item id="ncx-toc" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
     <item id="cover" media-type="image/png" href="images/cover.png"/>
@@ -49,6 +50,7 @@
     <itemref idref="a-fistful-of-monads"/>
     <itemref idref="for-a-few-monads-more"/>
     <itemref idref="zippers"/>
+    <itemref idref="end"/>
   </spine>
 
   <guide>
