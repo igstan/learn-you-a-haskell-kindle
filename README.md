@@ -17,9 +17,9 @@ Previewer tool][2].
 
 Screenshots
 -----------
-![Table of Contents](screenshot-01.gif)
-![Sample section start](screenshot-02.gif)
-![Sample code snippet](screenshot-03.gif)
+![Table of Contents](https://github.com/igstan/learn-you-a-haskell-kindle/raw/master/screenshot-01.gif)
+![Sample section start](https://github.com/igstan/learn-you-a-haskell-kindle/raw/master/screenshot-02.gif)
+![Sample code snippet](https://github.com/igstan/learn-you-a-haskell-kindle/raw/master/screenshot-03.gif)
 
 
 [1]: http://learnyouahaskell.com/
