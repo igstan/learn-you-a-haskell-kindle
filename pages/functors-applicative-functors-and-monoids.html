@@ -31,8 +31,7 @@ closer look at functors, along with slightly stronger and more useful
 versions of functors called applicative functors. We'll also take a look
  at monoids, which are sort of like socks.</p>
 <a name="functors-redux"></a><h2>Functors redux</h2>
-
-<p>We've already talked about functors in <a href="http://learnyouahaskell.com/making-our-own-types-and-typeclasses#the-functor-typeclass">their own little section</a>.
+<p>We've already talked about functors in <a href="making-our-own-types-and-typeclasses#the-functor-typeclass">their own little section</a>.
  If you haven't read it yet, you should probably give it a glance right 
 now, or maybe later when you have more time. Or you can just pretend you
  read it.</p>
@@ -153,8 +152,13 @@ and fetch some result. Using <span class="fixed">fmap (*3)</span> on <span class
  can be functors. The function being mapped over a computation results 
 in the same computation but the result of that computation is modified 
 with the function.</p>
+<<<<<<< HEAD
 
 <p>Before we go on to the rules that <span class="fixed">fmap</span> should follow, let's think about the type of <span class="fixed">fmap</span> once more. Its type is <span class="fixed">fmap :: (a -&gt; b) -&gt; f a -&gt; f b</span>. We're missing the class constraint <span class="fixed">(Functor f) =&gt;</span>, but we left it out here for brevity, because we're talking about functors anyway so we know what the <span class="fixed">f</span> stands for. When we first learned about <a href="http://learnyouahaskell.com/higher-order-functions#curried-functions">curried functions</a>, we said that all Haskell functions actually take one parameter. A function <span class="fixed">a -&gt; b -&gt; c</span> actually takes just one parameter of type <span class="fixed">a</span> and then returns a function <span class="fixed">b -&gt; c</span>, which takes one parameter and returns a <span class="fixed">c</span>.
+=======
+<img src="../images/lifter.png" alt="lifting a function is easier than lifting a million pounds" class="right" width="443" height="450"/>
+<p>Before we go on to the rules that <span class="fixed">fmap</span> should follow, let's think about the type of <span class="fixed">fmap</span> once more. Its type is <span class="fixed">fmap :: (a -&gt; b) -&gt; f a -&gt; f b</span>. We're missing the class constraint <span class="fixed">(Functor f) =&gt;</span>, but we left it out here for brevity, because we're talking about functors anyway so we know what the <span class="fixed">f</span> stands for. When we first learned about <a href="higher-order-functions.html#curried-functions">curried functions</a>, we said that all Haskell functions actually take one parameter. A function <span class="fixed">a -&gt; b -&gt; c</span> actually takes just one parameter of type <span class="fixed">a</span> and then returns a function <span class="fixed">b -&gt; c</span>, which takes one parameter and returns a <span class="fixed">c</span>.
+>>>>>>> 79d9a1a... Made self-referential links internal
  That's how if we call a function with too few parameters (i.e. 
 partially apply it), we get back a function that takes the number of 
 parameters that we left out (if we're thinking about functions as taking
@@ -231,7 +235,7 @@ scenes and that it will act like a thing that can be mapped over, i.e. a
  functor. You figure out how the second law holds for some type by 
 looking at the implementation of <span class="fixed">fmap</span> for that type and then using the method that we used to check if <span class="fixed">Maybe</span> obeys the first law.</p>
 <p>If you want, we can check out how the second functor law holds for <span class="fixed">Maybe</span>. If we do <span class="fixed">fmap (f . g)</span> over <span class="fixed">Nothing</span>, we get <span class="fixed">Nothing</span>, because doing a <span class="fixed">fmap</span> with any function over <span class="fixed">Nothing</span> returns <span class="fixed">Nothing</span>. If we do <span class="fixed">fmap f (fmap g Nothing)</span>, we get <span class="fixed">Nothing</span>, for the same reason. OK, seeing how the second law holds for <span class="fixed">Maybe</span> if it's a <span class="fixed">Nothing</span> value is pretty easy, almost trivial. </p><p>How about if it's a <span class="fixed">Just <i>something</i></span> value? Well, if we do <span class="fixed">fmap (f . g) (Just x)</span>, we see from the implementation that it's implemented as <span class="fixed">Just ((f . g) x)</span>, which is, of course, <span class="fixed">Just (f (g x))</span>. If we do <span class="fixed">fmap f (fmap g (Just x))</span>, we see from the implementation that <span class="fixed">fmap g (Just x)</span> is <span class="fixed">Just (g x)</span>. Ergo, <span class="fixed">fmap f (fmap g (Just x))</span> equals <span class="fixed">fmap f (Just (g x))</span> and from the implementation we see that this equals <span class="fixed">Just (f (g x))</span>.</p>
-<p>If you're a bit confused by this proof, don't worry. Be sure that you understand how <a href="http://learnyouahaskell.com/higher-order-functions#composition">function composition</a>
+<p>If you're a bit confused by this proof, don't worry. Be sure that you understand how <a href="higher-order-functions.html#composition">function composition</a>
  works. Many times, you can intuitively see how these laws hold because 
 the types act like containers or functions. You can also just try them 
 on a bunch of different values of a type and be able to say with some 
@@ -458,7 +462,7 @@ that still yields that value. The minimal context for lists would be the
 ghci&gt; pure "Hey" :: Maybe String
 Just "Hey"
 </pre>
-<p>What about <span class="fixed">&lt;*&gt;</span>? If we look at what <span class="fixed">&lt;*&gt;</span>'s type would be if it were limited only to lists, we get <span class="fixed">(&lt;*&gt;) :: [a -&gt; b] -&gt; [a] -&gt; [b]</span>. It's implemented with a <a href="http://learnyouahaskell.com/starting-out#im-a-list-comprehension">list comprehension</a>. <span class="fixed">&lt;*&gt;</span>
+<p>What about <span class="fixed">&lt;*&gt;</span>? If we look at what <span class="fixed">&lt;*&gt;</span>'s type would be if it were limited only to lists, we get <span class="fixed">(&lt;*&gt;) :: [a -&gt; b] -&gt; [a] -&gt; [b]</span>. It's implemented with a <a href="starting-out.html#im-a-list-comprehension">list comprehension</a>. <span class="fixed">&lt;*&gt;</span>
  has to somehow extract the function out of its left parameter and then 
 map it over the right parameter. But the thing here is that the left 
 list can have zero functions, one function, or several functions inside 
@@ -2108,7 +2112,7 @@ that's a little more complex then.
 </p>
 
 <p>
-Remember the tree data structure from the <a href="http://learnyouahaskell.com/making-our-own-types-and-typeclasses#recursive-data-structures">Making Our 
+Remember the tree data structure from the <a href="making-our-own-types-and-typeclasses.html#recursive-data-structures">Making Our 
 Own Types and Typeclasses</a> chapter? We defined it like this:
 </p>
 

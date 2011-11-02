@@ -531,7 +531,7 @@ Zippers can be used with pretty much any data structure, so it's no surprise
 that they can be used to focus on sub-lists of lists. After all, lists are 
 pretty much like trees, only where a node in a tree has an element (or not) and 
 several sub-trees, a node in a list has an element and only a single sub-list. 
-When we <a href="http://learnyouahaskell.com/making-our-own-types-and-typeclasses#recursive-data-structures">implemented 
+When we <a href="making-our-own-types-and-typeclasses.html#recursive-data-structures">implemented 
 our own lists</a>, we defined our data type like so:
 </p>
 
@@ -1024,7 +1024,7 @@ could chain them like this to walk around:
 But now, instead of returning <span class="fixed">Zipper a</span>, they return
 <span class="fixed">Maybe (Zipper a)</span>, so chaining functions like this 
 won't work. We had a similar problem when we 
-were <a href="http://learnyouahaskell.com/a-fistful-of-monads#walk-the-line">dealing with our tightrope 
+were <a href="a-fistful-of-monads.html#walk-the-line">dealing with our tightrope 
 walker</a> in the chapter about monads. He also walked one step at a time and 
 each of his steps could result in failure because a bunch of birds could land on 
 one side of his balancing pole and make him fall. 

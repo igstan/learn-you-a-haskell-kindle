@@ -57,7 +57,7 @@ number or operator that was separated by a space as a single item. So it
 <p>Next up, what did we do with that list of items in our head? We went 
 over it from left to right and kept a stack as we did that. Does the 
 previous sentence remind you of anything? Remember, in the section about
- <a href="http://learnyouahaskell.com/higher-order-functions/#folds">folds</a>,
+ <a href="higher-order-functions.html#folds">folds</a>,
  we said that pretty much any function where you traverse a list from 
 left to right or right to left one element by element and build up 
 (accumulate) some result (whether it's a number, a list, a stack, 
@@ -81,7 +81,7 @@ solveRPN expression = head (foldl foldingFunction [] (words expression))
 </pre>
 <p>We take the expression and turn it into a list of items. Then we fold
  over that list of items with the folding function. Mind the <span class="fixed">[]</span>, which represents the starting accumulator. The accumulator is our stack, so <span class="fixed">[]</span> represents an empty stack, which is what we start with. After getting the final stack with a single item, we call <span class="fixed">head</span> on that list to get the item out and then we apply <span class="fixed">read</span>.</p>
-<p>So all that's left now is to implement a folding function that will take a stack, like <span class="fixed">[4,10]</span>, and an item, like <span class="fixed">"3"</span> and return a new stack <span class="fixed">[3,4,10]</span>. If the stack is <span class="fixed">[4,10]</span> and the item <span class="fixed">"*"</span>, then it will have to return <span class="fixed">[40]</span>. But before that, let's turn our function into <a href="http://learnyouahaskell.com/higher-order-functions#composition">point-free style</a> because it has a lot of parentheses that are kind of freaking me out:</p>
+<p>So all that's left now is to implement a folding function that will take a stack, like <span class="fixed">[4,10]</span>, and an item, like <span class="fixed">"3"</span> and return a new stack <span class="fixed">[3,4,10]</span>. If the stack is <span class="fixed">[4,10]</span> and the item <span class="fixed">"*"</span>, then it will have to return <span class="fixed">[40]</span>. But before that, let's turn our function into <a href="higher-order-functions.html#composition">point-free style</a> because it has a lot of parentheses that are kind of freaking me out:</p>
 <pre name="code" class="haskell:hs">import Data.List
 
 solveRPN :: (Num a) =&gt; String -&gt; a

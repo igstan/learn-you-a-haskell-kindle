@@ -391,9 +391,8 @@ ghci&gt; Vector 2 9 3 `vectMult` (Vector 4 9 5 `scalarMult` Vector 9 2 4)
 Vector 148 666 222
 </pre>
 <a name="derived-instances"></a><h2>Derived instances</h2>
-
-<p>In the <a href="http://learnyouahaskell.com/types-and-typeclasses#typeclasses-101">Typeclasses 101</a>
- section, we explained the basics of typeclasses. We explained that a 
+<p>In the <a href="types-and-typeclasses#typeclasses-101">Typeclasses 101</a>
+section, we explained the basics of typeclasses. We explained that a 
 typeclass is a sort of an interface that defines some behavior. A type 
 can be made an <em>instance</em> of a typeclass if it supports that behavior. Example: the <span class="fixed">Int</span> type is an instance of the <span class="fixed">Eq</span> typeclass because the <span class="fixed">Eq</span> typeclass defines behavior for stuff that can be equated. And because integers can be equated, <span class="fixed">Int</span> is a part of the <span class="fixed">Eq</span> typeclass. The real usefulness comes with the functions that act as the interface for <span class="fixed">Eq</span>, namely <span class="fixed">==</span> and <span class="fixed">/=</span>. If a type is a part of the <span class="fixed">Eq</span> typeclass, we can use the <span class="fixed">==</span> functions with values of that type. That's why expressions like <span class="fixed">4 == 4</span> and <span class="fixed">"foo" /= "bar"</span> typecheck.</p>
 <p>We also mentioned that they're often confused with classes in 
