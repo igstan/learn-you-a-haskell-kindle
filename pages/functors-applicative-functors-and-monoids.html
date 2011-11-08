@@ -31,7 +31,7 @@ closer look at functors, along with slightly stronger and more useful
 versions of functors called applicative functors. We'll also take a look
  at monoids, which are sort of like socks.</p>
 <a name="functors-redux"></a><h2>Functors redux</h2>
-<p>We've already talked about functors in <a href="making-our-own-types-and-typeclasses#the-functor-typeclass">their own little section</a>.
+<p>We've already talked about functors in <a href="making-our-own-types-and-typeclasses.html#the-functor-typeclass">their own little section</a>.
  If you haven't read it yet, you should probably give it a glance right 
 now, or maybe later when you have more time. Or you can just pretend you
  read it.</p>
@@ -152,13 +152,7 @@ and fetch some result. Using <span class="fixed">fmap (*3)</span> on <span class
  can be functors. The function being mapped over a computation results 
 in the same computation but the result of that computation is modified 
 with the function.</p>
-<<<<<<< HEAD
-
-<p>Before we go on to the rules that <span class="fixed">fmap</span> should follow, let's think about the type of <span class="fixed">fmap</span> once more. Its type is <span class="fixed">fmap :: (a -&gt; b) -&gt; f a -&gt; f b</span>. We're missing the class constraint <span class="fixed">(Functor f) =&gt;</span>, but we left it out here for brevity, because we're talking about functors anyway so we know what the <span class="fixed">f</span> stands for. When we first learned about <a href="http://learnyouahaskell.com/higher-order-functions#curried-functions">curried functions</a>, we said that all Haskell functions actually take one parameter. A function <span class="fixed">a -&gt; b -&gt; c</span> actually takes just one parameter of type <span class="fixed">a</span> and then returns a function <span class="fixed">b -&gt; c</span>, which takes one parameter and returns a <span class="fixed">c</span>.
-=======
-<img src="../images/lifter.png" alt="lifting a function is easier than lifting a million pounds" class="right" width="443" height="450"/>
 <p>Before we go on to the rules that <span class="fixed">fmap</span> should follow, let's think about the type of <span class="fixed">fmap</span> once more. Its type is <span class="fixed">fmap :: (a -&gt; b) -&gt; f a -&gt; f b</span>. We're missing the class constraint <span class="fixed">(Functor f) =&gt;</span>, but we left it out here for brevity, because we're talking about functors anyway so we know what the <span class="fixed">f</span> stands for. When we first learned about <a href="higher-order-functions.html#curried-functions">curried functions</a>, we said that all Haskell functions actually take one parameter. A function <span class="fixed">a -&gt; b -&gt; c</span> actually takes just one parameter of type <span class="fixed">a</span> and then returns a function <span class="fixed">b -&gt; c</span>, which takes one parameter and returns a <span class="fixed">c</span>.
->>>>>>> 79d9a1a... Made self-referential links internal
  That's how if we call a function with too few parameters (i.e. 
 partially apply it), we get back a function that takes the number of 
 parameters that we left out (if we're thinking about functions as taking
