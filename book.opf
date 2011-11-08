@@ -30,6 +30,21 @@
 
     <item id="ncx-toc" media-type="application/x-dtbncx+xml" href="toc.ncx"/>
     <item id="cover" media-type="image/png" href="images/cover.png"/>
+
+    <item media-type="image/png" href="images/almostzipper.png"/>
+    <item media-type="image/png" href="images/binarytree.png"/>
+    <item media-type="image/png" href="images/chess.png"/>
+    <item media-type="image/png" href="images/concatmap.png"/>
+    <item media-type="image/png" href="images/foldl.png"/>
+    <item media-type="image/png" href="images/listmonster.png"/>
+    <item media-type="image/png" href="images/maxs.png"/>
+    <item media-type="image/png" href="images/pollywantsa.png"/>
+    <item media-type="image/png" href="images/prob.png"/>
+    <item media-type="image/png" href="images/pythag.png"/>
+    <item media-type="image/png" href="images/quicksort.png"/>
+    <item media-type="image/png" href="images/roads.png"/>
+    <item media-type="image/png" href="images/roads_simple.png"/>
+    <item media-type="image/png" href="images/rpn.png"/>
   </manifest>
 
   <spine toc="ncx-toc">
