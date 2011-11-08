@@ -10,15 +10,25 @@ h2 {
   margin: 1em 0;
 }
 
-.image {
-  text-align: center;
-  margin: 1.5em 0;
-}
-
 pre {
   margin: 1em 0;
 }
 
 .fixed {
   font-family: monospace;
+}
+
+.image, img.center {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+img.right {
+  float: right;
+  margin-left: 0.5em;
+}
+
+img.left {
+  float: left;
+  margin-right: 0.5em;
 }
