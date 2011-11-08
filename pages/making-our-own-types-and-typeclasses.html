@@ -796,7 +796,7 @@ ghci&gt; a .++ b
 <p>Notice how we pattern matched on <span class="fixed">(x :-: xs)</span>. That works because pattern matching is actually about matching constructors. We can match on <span class="fixed">:-:</span> because it is a constructor for our own list type and we can also match on <span class="fixed">:</span> because it is a constructor for the built-in list type. Same goes for <span class="fixed">[]</span>.
  Because pattern matching works (only) on constructors, we can match for
  stuff like that, normal prefix constructors or stuff like <span class="fixed">8</span> or <span class="fixed">'a'</span>, which are basically constructors for the numeric and character types, respectively.</p>
-
+<img src="../images/binarytree.png" alt="binary search tree" class="left" width="323" height="225"/>
 <p>Now, we're going to implement a <em>binary search tree</em>. If 
 you're not familiar with binary search trees from languages like C, 
 here's what they are: an element points to two elements, one on its left
