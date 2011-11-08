@@ -439,7 +439,7 @@ sum' xs = foldl (\acc x -&gt; acc + x) 0 xs
 <pre name="code" class="haskell:ghci">ghci&gt; sum' [3,5,2,1]
 11
 </pre>
-
+<img src="../images/foldl.png" alt="foldl" class="left" width="172" height="348"/>
 <p>Let's take an in-depth look into how this fold happens. <span class="fixed">\acc x -&gt; acc + x</span> is the binary function. <span class="fixed">0</span> is the starting value and <span class="fixed">xs</span> is the list to be folded up. Now first, <span class="fixed">0</span> is used as the <span class="fixed">acc</span> parameter to the binary function and <span class="fixed">3</span> is used as the <span class="fixed">x</span> (or the current element) parameter. <span class="fixed">0 + 3</span> produces a <span class="fixed">3</span> and it becomes the new accumulator value, so to speak. Next up, <span class="fixed">3</span> is used as the accumulator value and <span class="fixed">5</span> as the current element and <span class="fixed">8</span> becomes the new accumulator value. Moving forward, <span class="fixed">8</span> is the accumulator value, <span class="fixed">2</span> is the current element, the new accumulator value is <span class="fixed">10</span>. Finally, that <span class="fixed">10</span> is used as the accumulator value and <span class="fixed">1</span> as the current element, producing an <span class="fixed">11</span>. Congratulations, you've done a fold! </p>
 <p>This professional diagram on the left illustrates how a fold happens,
  step by step (day by day!). The greenish brown number is the 
