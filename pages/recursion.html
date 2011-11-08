@@ -76,7 +76,7 @@ maximum' [x] = x
 maximum' (x:xs) = max x (maximum' xs)
 </pre>
 <p>How's that for elegant! In essence, the maximum of a list is the max of the first element and the maximum of the tail.</p>
-
+<img src="../images/maxs.png" alt="max" class="center" width="651" height="267"/>
 <a name="a-few-more-recursive-functions"></a><h2>A few more recursive functions</h2>
 <p>Now that we know how to generally think recursively, let's implement a
  few functions using recursion. First off, we'll implement <span class="fixed">replicate</span>. <span class="fixed">replicate</span> takes an <span class="fixed">Int</span> and some element and returns a list that has several repetitions of the same element. For instance, <span class="fixed">replicate 3 5</span> returns <span class="fixed">[5,5,5]</span>.
