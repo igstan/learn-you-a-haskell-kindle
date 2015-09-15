@@ -4,6 +4,11 @@ These are the sources that I used to generate [Miran Lipovača's book][1] in the
 Kindle-supported .mobi format.
 
 
+Download Generated MOBI
+-----------------------
+[learn-you-a-haskell.mobi](https://github.com/RadoBuransky/learn-you-a-haskell-kindle/releases/download/v1.0.0/learn-you-a-haskell.mobi)
+
+
 How to Generate the Book
 ------------------------
 1. Download [KindleGen][2]
