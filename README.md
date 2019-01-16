@@ -28,4 +28,4 @@ Screenshots
 
 
 [1]: http://learnyouahaskell.com/
-[2]: http://www.amazon.com/gp/feature.html?ie=UTF8&docId=1000234621
+[2]: https://www.amazon.com/gp/feature.html?tag=mr060-20&docId=1000765211
